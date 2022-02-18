@@ -14,20 +14,20 @@ main() {
   final usecase = SearchByZipCodeImp(repository);
 
   test('Deve retornar uma SearchEntity', () async {
-    when(() => repository.search(any())).thenAnswer((_) async => Right(searchEntityMock));
+    when(() => repository.search(any())).thenAnswer((_) async => Right(searchDtoMock));
     final result = await usecase('45810-000');
-    expect(result, Right(searchEntityMock));
+    expect(result, Right(searchDtoMock));
     verify(() => repository.search(any())).called(1);
   });
 
   test('Deve retornar uma InvalidTextError caso o texto seja null', () async {
-    when(() => repository.search(any())).thenAnswer((_) async => Right(searchEntityMock));
+    when(() => repository.search(any())).thenAnswer((_) async => Right(searchDtoMock));
     var result = await usecase(null);
     expect(result.fold(id, id), isA<InvalidTextError>());
   });
 
   test('Deve retornar uma InvalidTextError caso o texto seja vazio', () async {
-    when(() => repository.search(any())).thenAnswer((_) async => Right(searchEntityMock));
+    when(() => repository.search(any())).thenAnswer((_) async => Right(searchDtoMock));
     var result = await usecase('');
     expect(result.fold(id, id), isA<InvalidTextError>());
   });
