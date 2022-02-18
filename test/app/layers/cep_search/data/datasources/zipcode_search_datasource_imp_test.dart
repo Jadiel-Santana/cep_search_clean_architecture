@@ -1,4 +1,4 @@
-import 'package:cep_search_clean_architecture/app/layers/cep_search/data/datasources/zip_code_search_datasource_imp.dart';
+import 'package:cep_search_clean_architecture/app/layers/cep_search/data/datasources/zipcode_search_datasource_imp.dart';
 import 'package:cep_search_clean_architecture/app/layers/cep_search/domain/errors/errors.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:http/http.dart';
