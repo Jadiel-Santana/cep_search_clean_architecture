@@ -1,4 +1,5 @@
 import 'package:dartz/dartz.dart';
+
 import '../entities/search_entity.dart';
 import '../errors/errors.dart';
 import '../repositories/search_repository.dart';
