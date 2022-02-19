@@ -1,6 +1,6 @@
-import 'package:cep_search_clean_architecture/app/layers/cep_search/data/datasources/search_datasource.dart';
-import 'package:cep_search_clean_architecture/app/layers/cep_search/data/repositories/search_repository_imp.dart';
 import 'package:cep_search_clean_architecture/app/layers/cep_search/domain/errors/errors.dart';
+import 'package:cep_search_clean_architecture/app/layers/cep_search/infra/datasources/search_datasource.dart';
+import 'package:cep_search_clean_architecture/app/layers/cep_search/infra/repositories/search_repository_imp.dart';
 import 'package:dartz/dartz.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
