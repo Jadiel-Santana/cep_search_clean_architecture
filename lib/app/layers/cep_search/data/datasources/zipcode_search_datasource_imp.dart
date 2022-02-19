@@ -1,10 +1,9 @@
 import 'dart:convert';
 
-import 'package:cep_search_clean_architecture/app/layers/cep_search/data/datasources/search_datasource.dart';
-
 import '../../../../core/domain/services/http_service.dart';
 import '../../domain/errors/errors.dart';
-import '../dtos/search_dto.dart';
+import '../../infra/datasources/search_datasource.dart';
+import '../../infra/dtos/search_dto.dart';
 
 extension on String {
   normalize() => replaceAll('-', '');

@@ -1,4 +1,4 @@
-import 'package:cep_search_clean_architecture/app/layers/cep_search/data/dtos/search_dto.dart';
+import 'package:cep_search_clean_architecture/app/layers/cep_search/infra/dtos/search_dto.dart';
 
 final searchDtoMock = SearchDto(
   zipCode: '45810-000',
